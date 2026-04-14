@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>GrennRide</title>
+    <link rel="stylesheet" href="GREEN.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="navbar">
+            <div class="logo">GrennRide</div>
+            <div class="links">
+                <li><a href="#a propos">A propos</a></li>
+                <li><a href="#nos solutions">Nos solutions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+            <div class="menu_burger_button3">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+        </div>
+        <div class="burger_menu ">
+                <ul class="links">
+                <li><a href="#a propos">A propos</a></li>
+                <li><a href="#nos solutions">Nos solutions</a></li>
+                <li><a href="#contact">Contact</a></li>  
+                </ul>
+            </div>
+    </header>
+   
+    <!--    la section de la page principale monrant les differntes solutions pour un bon deplacement -->
+    <section class="main">
+        <div class="main_content">
+            <h1>GrennRide</h1>
+            <p>Votre partenaire de mobilité durable!  
+             
+            </p>
+            <a href="#nos solutions" class="btn">Découvrez nos solutions</a>
+        </div>
+    </section>  
+    <!-- la section de nos solutions -->
+     <!-- ajoutes directement les photos de chaque articles -->
+
+    <section class="solutions" id="nos solutions">
+        <h2>Nos Solutions</h2>
+        <div class="solution_cards">
+            <div class="card">
+                <h3>Vélos électriques</h3>
+                <!-- ajuster la taille de l'image -->
+                <img src="https://images.pexels.com/photos/4542985/pexels-photo-4542985.jpeg" alt="Vélo électrique" style="width: 80%; height: auto;">
+                <p>Découvrez notre gamme de vélos électriques pour des déplacements rapides et écologiques en ville.</p>
+            </div>
+            <div class="card">
+                <h3>Trottinettes électriques</h3>
+                <img src="https://images.pexels.com/photos/15260665/pexels-photo-15260665.jpeg" alt="Trottinette électrique" style="width: 80%; height: auto;">
+                <p>Optez pour nos trottinettes électriques pour une mobilité urbaine pratique et respectueuse de l'environnement.</p>
+            </div>
+            <div class="card">
+                <h3>Covoiturage</h3>
+                <img src="https://images.pexels.com/photos/4571555/pexels-photo-4571555.jpeg" alt="Covoiturage" style="width: 80%; height: auto;  ">
+                <p>Partagez vos trajets avec d'autres utilisateurs grâce à notre plateforme de covoiturage écologique.</p>
+            </div>
+            <!-- rajoute comme solutions les motos et voitures de luxes -->
+                <div class="card">
+                    <h3>Motos électriques</h3>
+                    <img src="https://images.pexels.com/photos/13178573/pexels-photo-13178573.jpeg" alt="Moto électrique" style="width: 80%; height: auto;">
+                    <p>Découvrez nos motos électriques pour une expérience de conduite écologique et performante.</p>
+                </div>  
+                <div class="card">
+                    <h3>Voitures de luxes</h3>
+                    <img src="https://images.pexels.com/photos/33327689/pexels-photo-33327689.jpeg" alt="Voiture de luxes" style="width: 80%; height: auto;">
+                    <p>Optez pour nos voitures de luxes pour un déplacement confortable et respectueux de l'environnement.</p>
+                </div>
+        </div>  
+
+    </section>
+    <!-- la section de contact -->
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>Pour plus d'informations, n'hésitez pas à nous contacter.</p>
+        <form>
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+
+    </section>
+<!-- le footer -->
+    <footer>
+        <p>&copy; 2023 GrennRide. schekinayeme. Tous droits réservés.</p>
+    </footer>       
+
+      <!-- utilise un script pour constater un survoler sur les solutions -->
+        <script>
+            constcards = document.querySelectorAll('.card');
+
+            cards.forEach(card => {
+                card.addEventListener('mouseover', () => {
+                    card.style.transform = 'scale(1.05)';
+                    card.style.transition = 'transform 0.3s ease';
+                });
+
+                card.addEventListener('mouseout', () => {
+                    card.style.transform = 'scale(1)';
+                });
+            });
+        </script>
+
+
+        <!-- utulise un scrip js pour faire defiler de gauche a droites avec le bouton < > -->
+
+     <script>
+        const cards = document.querySelectorAll('.card');
+        let currentCard = 0;
+
+        function showCard(index) {
+            cards.forEach((card, i) => {
+                card.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        document.querySelector('.btn').addEventListener('click', () => {
+            currentCard = (currentCard + 1) % cards.length;
+            showCard(currentCard);
+        });
+
+        
+        
+        
+     </script>
+    <!-- le script a jouté pour le menu burger -->
+    <script>
+        const menuBurgerButton3 = document.querySelector('.menu_burger_button3');
+        const burgerMenu = document.querySelector('.burger_menu');
+
+        menuBurgerButton3.addEventListener('click', () => {
+            burgerMenu.classList.toggle('disparution');
+        });
+    </script>
+
+
+</body>
+</html>

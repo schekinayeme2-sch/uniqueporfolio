@@ -1,0 +1,184 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    } 
+     body{
+    height: 100vh;
+    /* background-image: url(https://images.pexels.com/photos/3221145/pexels-photo-3221145.jpeg?_gl=1*1k3stde*_ga*MTAzNDU0MTUxNC4xNzY3NTQ2ODM3*_ga_8JE65Q40S6*czE3Njc1NDY4MzYkbzEkZzEkdDE3Njc1NDg0NzkkajU5JGwwJGgwhttps://images.pexels.com/photos/63294/autos-technology-vw-multi-storey-car-park-63294.jpeg?_gl=1*is1jw6*_ga*MTAzNDU0MTUxNC4xNzY3NTQ2ODM3*_ga_8JE65Q40S6*czE3Njc1NDY4MzYkbzEkZzEkdDE3Njc1NDcwMzgkajI1JGwwJGgw); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   }
+   header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(80, 138, 45, 0.413);
+   }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);   
+        }
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .links{
+            list-style: none;
+            display: flex;
+        }
+        .links li{
+            margin-left: 20px;
+        }
+        .links a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+            .menu_burger_button3{
+                display: none;
+                font-size: 24px;
+                color: #fff;
+                cursor: pointer;
+            }
+        @media (max-width: 768px) {
+            .links{
+                display: none;
+            }
+            .menu_burger_button3{
+                display: block;
+            }
+        }
+
+            .burger_menu{
+                display: none;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                background-color: rgba(0, 0, 0, 0.8);
+                padding: 10px;
+                border-radius: 5px;
+                
+            }
+            .burger_menu .links{
+                display: flex;
+                flex-direction: column;
+            }
+            .burger_menu .links li{
+                margin: 10px 0;
+            }
+                .burger_menu .links a{
+                    color: #fff;
+                    font-size: 18px;
+                }
+                .burger_menu.disparution{
+                    display: block;
+                }   
+                
+                
+
+
+ .main{
+         height: 100vh;
+         background: url(https://images.pexels.com/photos/3221145/pexels-photo-3221145.jpeg?_gl=1*1k3stde*_ga*MTAzNDU0MTUxNC4xNzY3NTQ2ODM3*_ga_8JE65Q40S6*czE3Njc1NDY4MzYkbzEkZzEkdDE3Njc1NDg0NzkkajU5JGwwJGgwhttps://images.pexels.com/photos/63294/autos-technology-vw-multi-storey-car-park-63294.jpeg?_gl=1*is1jw6*_ga*MTAzNDU0MTUxNC4xNzY3NTQ2ODM3*_ga_8JE65Q40S6*czE3Njc1NDY4MzYkbzEkZzEkdDE3Njc1NDcwMzgkajI1JGwwJGgw)   no-repeat center center/cover;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: white;
+         text-align: center;
+     }
+        .main_content h1{
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        .main_content p{
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        .btn{
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover{
+            background-color: #218838;
+        }
+        .solutions{
+            padding: 50px 20px;
+            background-color: #f8f9fa;
+        }   
+        .solutions h2{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .solution_cards{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .card{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 30%;
+            text-align: center;
+        }
+        .card h3{
+            margin-bottom: 15px;
+        }
+        .contact{
+            padding: 50px 20px;
+        }
+        .contact h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact p{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contact form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact input, .contact textarea{
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact button{
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact button:hover{
+            background-color: #218838;
+        }
+        footer{
+            text-align: center;
+            padding: 20px;
+            background-color:rgba(81, 138, 45, 0.618);
+            color: white;
+        }       
+             
+
+

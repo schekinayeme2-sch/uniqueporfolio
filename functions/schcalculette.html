@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculatrice simple</title>
+</head>
+<body>
+    <h1>Calculatrice</h1>
+
+    <label for="nombre1">Nombre 1 :</label>
+    <input type="number" id="nombre1">
+
+    <br><br>
+
+    <label for="nombre2">Nombre 2 :</label>
+    <input type="number" id="nombre2">
+
+    <br><br>
+
+    <label for="operation">Opération :</label>
+    <select id="operation">
+        <option value="addition">Addition</option>
+        <option value="soustraction">Soustraction</option>
+        <option value="multiplication">Multiplication</option>
+        <option value="division">Division</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="lancerCalcul()">Calculer</button>
+
+    <p id="resultat">Résultat : </p>
+
+    <!-- Ton script JS peut être :
+         - soit écrit juste ici entre <script>...</script>
+         - soit dans un fichier .js séparé -->
+    <script>
+        // === TON CODE JS ICI (copier-coller) ===
+
+        function additionner(a, b) {
+            let result = a + b;
+            return result;
+        }
+
+        function soustraire(a, b) {
+            let result = a - b;
+            return result;
+        }
+
+        function multiplier(a, b) {
+            let result = a * b;
+            return result;
+        }
+
+        function diviser(a, b) {
+            if (b === 0) {
+                return "Erreur: Division par zéro.";
+            }   
+            let result = a / b;
+            return result;
+        }
+
+        function calculer(a, b, operation) {
+            if (operation === 'addition') {
+                return additionner(a, b);
+            } else if (operation === 'soustraction') {
+                return soustraire(a, b);
+            } else if (operation === 'multiplication') {
+                return multiplier(a, b);
+            } else if (operation === 'division') {
+                return diviser(a, b);
+            } else {
+                return "Erreur: Opération inconnue.";
+            }   
+        }
+
+        function lancerCalcul() {
+            const a = parseFloat(document.getElementById("nombre1").value);
+            const b = parseFloat(document.getElementById("nombre2").value);
+            const operation = document.getElementById("operation").value;
+
+            const resultat = calculer(a, b, operation);
+
+            document.getElementById("resultat").textContent = "Résultat : " + resultat;
+        }
+    </script>
+</body>
+</html>

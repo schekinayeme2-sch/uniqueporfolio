@@ -1,0 +1,189 @@
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: sans-serif;
+      background: #f1ebd6;
+      padding: 2rem 1rem;
+      color: #302714;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* ---- HEADER ---- */
+    .header {
+      background: white;
+      border-radius: 16px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #5e4713;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f0dca0, #f0e2c0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: #a0843f;
+    }
+
+    .header h1 { font-size: 20px; font-weight: 700; }
+    .header p  { font-size: 13px; color: #888888; }
+
+    .badge {
+      background: #fff5e6;
+      color: #b3893a;
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* ---- NAVIGATION ---- */
+    .nav { display: flex; gap: 4px; }
+    .titre a{
+      text-decoration: none;
+      color: #333333;
+    }
+
+    .nav a {
+      padding: 8px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      color: #888888;
+    }
+
+    .nav a.active {
+      background: #f4c058;
+      color: white;
+    }
+
+    /* ---- TITRES DE SECTION ---- */
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 22px;
+      background: #f7ce54;
+      border-radius: 2px;
+    }
+
+    /* ---- CARTE PRINCIPALE ---- */
+    .card {
+      background: white;
+      border-radius: 16px;
+      border: 1px solid #837c7c;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-text {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+  
+      .download-cv {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 16px;
+        background: #d39c26;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+      .download-cv:hover {
+        background: #b89228;
+      }
+  
+
+    /* ---- GRILLE TP ---- */
+    .tp-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .tp-card {
+      border: 1px solid #f5eddf;
+      border-radius: 10px;
+      padding: 14px;
+    }
+
+    .tp-card .num   { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+    .tp-card .titre { font-size: 13px; color: #666; margin-bottom: 10px; }
+    .tp-card .tag   { font-size: 12px; color: #d3a226; font-weight: 500; }
+
+    /* ---- SÉPARATEUR ---- */
+    hr {
+      border: none;
+      border-top: 1.5px dashed #ddd;
+      margin: 1.5rem 0;
+    }
+
+    /* ---- MISSIONS ---- */
+    .mission {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px;
+      border: 1px solid #f5f0df;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .mission-icon {
+      width: 38px;
+      height: 38px;
+      background: #fffaee;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .mission-name { font-size: 14px; font-weight: 600; }
+    .mission-desc { font-size: 13px; color: #888; margin-top: 2px; }
+    .mission-tag  { margin-left: auto; font-size: 12px; color: #d39c26; font-weight: 500; }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 600px) {
+      .tp-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+ 

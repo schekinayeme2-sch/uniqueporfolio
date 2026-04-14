@@ -1,0 +1,42 @@
+ *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+ body{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ header{
+    height: 100vh;
+    width: 100vw;
+    /* heigth hauteur
+    width longueur  */
+    background-image: url(DSC03397.JPG);
+    background-size: cover;
+
+ }
+ /* class on mets .la class */
+ .navbar{
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+ }
+ .navbar a {
+    color: rgb(7, 7, 7);
+ }
+ .navbar .logo{
+    font-size: 2em;
+    font-weight: bold;
+
+
+ }
+ .navbar .nav-links ul{
+    display: flex;
+ }
+ .navbar.nav-links ul li{
+    margin: 0 30px;
+ }

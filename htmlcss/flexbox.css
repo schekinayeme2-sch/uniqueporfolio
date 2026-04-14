@@ -1,0 +1,27 @@
+.container{
+    background-color: aquamarine;
+    width: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.item{
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+.item1{
+    background-color: aqua;
+}
+.item2{
+    background-color: rgb(210, 76, 27);
+}
+.item3{
+    background-color: rgb(186, 208, 41);
+}
+.item4{
+    background-color: rgb(83, 10, 78);
+}
+.item5{
+    background-color: rgb(223, 18, 138);
+}

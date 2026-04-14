@@ -1,0 +1,27 @@
+main{
+    background-color: brown;
+    margin: 0 auto;
+      max-width: 1000px; 
+}
+    /* max-width Large maximum* PEUT IMPORTE LA LARGEUR IL SADAPTE*/
+    .colonne{
+        color: white;
+        
+    }
+    /* % en responsive design plutot que les px */
+    /* img{
+        max-width: 100%;
+    } */
+     .red{
+        background-color: red;
+     }
+     .blue{
+        background-color: blue;
+     }
+     @media screen and(min-width:780px) {
+        .colonne{
+            float: left;
+            width: 50%;
+        }
+        
+     }
