@@ -15,24 +15,30 @@
 
     /* ---- HEADER ---- */
     .header {
+      position: fixed;
       background: white;
       border-radius: 16px;
-      padding: 1.25rem 1.5rem;
-      margin-bottom: 1.5rem;
+      padding: 10px 10px;
+      margin-bottom: 10px;
       border: 1px solid #5e4713;
+      width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+   
     }
 
     .header-top {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 1rem;
+      margin-bottom: 1px;
     }
 
     .header-left {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
     }
 
     .avatar {
@@ -48,27 +54,154 @@
       color: #a0843f;
     }
 
-    .header h1 { font-size: 20px; font-weight: 700; }
-    .header p  { font-size: 13px; color: #888888; }
+    .header h1 { font-size: 15px; font-weight: 700; }
+    .header p  { font-size: 10px; color: #888888; }
 
     .badge {
       background: #fff5e6;
       color: #b3893a;
-      border-radius: 20px;
-      padding: 6px 16px;
-      font-size: 13px;
+      border-radius: 15px;
+      padding: 5px 12px;
+      font-size: 10px;
       font-weight: 500;
     }
 
+     /* ---- HERO ---- */
+    .hero {
+      min-height: calc(100vh - 90px);
+      padding: 5rem 3rem 3rem;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Formes décoratives */
+    .shape {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.25);
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+
+    .shape-1 {
+      width: 180px; height: 200px;
+      top: 20%; right: 22%;
+      border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+    }
+
+    .shape-2 {
+      width: 130px; height: 150px;
+      top: 45%; right: 14%;
+      border-radius: 45% 55% 50% 50% / 55% 45% 55% 45%;
+    }
+
+    /* Texte */
+    .hero h1 {
+      font-size: clamp(3.5rem, 10vw, 6.5rem);
+      font-weight: 900;
+      color: #0d1a2e;
+      line-height: 1;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero h2 {
+      font-size: clamp(0.85rem, 2vw, 1.05rem);
+      font-weight: 700;
+      color: #1a44cc;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 2rem;
+    }
+
+    /* Boutons */
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      transition: opacity 0.2s;
+    }
+
+    .btn:hover { opacity: 0.85; }
+
+    .btn-outline {
+      background: rgba(255,255,255,0.5);
+      color: #1a44cc;
+      border: 1.5px solid rgba(255,255,255,0.8);
+      width: 220px;
+      text-align: center;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 12px;
+    }
+
+    .btn-ghost {
+      background: rgba(255,255,255,0.4);
+      color: #1a44cc;
+      border: 1.5px solid rgba(255,255,255,0.7);
+      padding: 0.7rem 1.5rem;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      transition: opacity 0.2s;
+    }
+
+    .btn-ghost:hover { opacity: 0.8; }
+
+    .btn-solid {
+      background: #1a44cc;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.75rem;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      transition: background 0.2s ;
+    }
+
+    .btn-solid:hover { background: #1235a8; }
+
+
     /* ---- NAVIGATION ---- */
-    .nav { display: flex; gap: 4px; }
+    .nav { 
+      display: flex; 
+      align-items: center;
+      justify-content: space-between;
+      gap: 2px; 
+    }
     .titre a{
       text-decoration: none;
       color: #333333;
     }
 
     .nav a {
-      padding: 8px 20px;
+      padding: 5px 10px;
       border-radius: 20px;
       text-decoration: none;
       font-size: 14px;
@@ -82,20 +215,50 @@
     }
 
     /* ---- TITRES DE SECTION ---- */
+    .contener{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-text {
+  flex: 2; /* texte prend la gauche */
+}
+.avatar2{
+  flex: 1; /* prend la moitié droite */
+}
+
+/* .avatar2 {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;   /* recadre bien l'imge 
+  border-radius: 12px; /* coins arrondis 
+  flex-shrink: 0;       empêche l'image de rétrécir 
+} */
+
+    .avatar2 {
+      width: 200px;
+      height: 300px;
+      border-radius: 80%;
+      background: linear-gradient(135deg, #f0dca0, #f0e2c0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .section-title {
       font-size: 18px;
       font-weight: 700;
-      margin-bottom: 1rem;
+      margin: 3rem;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
     }
 
     .section-title::before {
       content: '';
       display: inline-block;
       width: 4px;
-      height: 22px;
+      height: 18px;
       background: #f7ce54;
       border-radius: 2px;
     }
@@ -110,26 +273,200 @@
     }
 
     .about-text {
-      font-size: 15px;
+      font-size: 17px;
       color: #333;
       line-height: 1.6;
     }
+  
+    /* img {
+  float: right;
+  margin-left: 20px;
+} */
 
   
       .download-cv {
         display: inline-block;
-        margin-top: 10px;
+        margin-top: 1.5rem;
         padding: 8px 16px;
         background: #d39c26;
         color: white;
         text-decoration: none;
         border-radius: 6px;
         font-size: 14px;
+     
       }
       .download-cv:hover {
         background: #b89228;
       }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formation-section {
+  padding: 2rem 1.5rem;
+  margin-top: 2rem;
+}
+
+.formation-titre {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+.formation-titre h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.formation-icon {
+  font-size: 1.5rem;
+}
+
+/* ---- TIMELINE ---- */
+.timeline {
+  position: relative;
+  padding-left: 36px;
+}
+
+/* Ligne verticale */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #93c5fd;
+}
+
+/* Chaque ligne */
+.timeline-item {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+/* Point rond sur la ligne */
+.timeline-dot {
+  position: absolute;
+  left: -32px;
+  top: 24px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #3b82f6;
+}
+
+/* Carte */
+.timeline-card {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+/* Logo école */
+.school-logo {
+  display: inline-block;
+  background: #1d4ed8;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+}
+
+.timeline-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 6px;
+}
+
+.annee {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+.lieu {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.description {
+  font-size: 13px;
+  color: #555;
+  flex: 1;
+}
+
+.btn-savoir {
+  background: rgba(255, 255, 255, 0.8);
+  color: #2563eb;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.btn-savoir:hover {
+  background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* ---- GRILLE TP ---- */
     .tp-grid {
