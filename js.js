@@ -1,4 +1,4 @@
-const mots    = ["étudiante",  "alternante", "UX Designer",    "développeuse web"];
+const mots    = ["étudiante en IT",  "En recherchea d'lternante", "Passionée d' IX/UX Designer",    "Future développeuse web"];
 const couleurs = ["#9333ea",   "#e11d48",    "#0ea5e9",        "#16a34a"];
 let i = 0;
 
@@ -14,7 +14,7 @@ function afficher() {
   el.classList.add("visible");
 
   // Après 2 secondes, sortie
-  setTimeout(sortir, 2000);
+  setTimeout(sortir, 1000);
 }
 
 function sortir() {
@@ -25,7 +25,7 @@ function sortir() {
   setTimeout(() => {
     i = (i + 1) % mots.length;
     afficher();
-  }, 400); // correspond à la durée de la transition CSS
+  }, 300); // correspond à la durée de la transition CSS
 }
 
 afficher();
