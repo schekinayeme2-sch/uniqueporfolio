@@ -313,15 +313,15 @@
 .sous-titre {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 700;
-  color: #6633ff;
+  color: #091d2b;
 }
 
 .violet {
-  color: #6633ff;
+  color: #091d2b;
 }
 
 .rose {
-  color: #ff00cc;
+  color: #aea7ad;
 }
 
 
@@ -350,6 +350,13 @@
       background: #f4c058;
       color: white;
     }
+    /* le responsive de la nav  */
+    @media (max-width: 537px) {
+      .nav {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
 
 
 
@@ -369,7 +376,7 @@
     .section-title {
       font-size: 1.5rem;
       font-weight: 700;
-      margin: 3rem;
+      margin: 1.5rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -893,8 +900,8 @@
 
 /* ---- TITRE ---- */
 .certif-titre {
-  font-size: clamp(1rem, 7vw, 2rem);
-  font-weight: 700;
+  font-size: clamp(2rem, 7vw, 2rem);
+  font-weight: 900;
   color: white;
   margin-bottom: 0.75rem;
 }
@@ -909,7 +916,7 @@
 .certif-sous-titre {
   font-size: 11px;
   color: #888;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 /* ---- CAROUSEL ---- */
@@ -958,7 +965,7 @@
 
 /* ---- NOM + DESC ---- */
 .certif-nom {
-  font-size: clamp(1.2rem, 5vw, 2rem);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: 700;
   color: white;
   margin-bottom: 1rem;
@@ -968,43 +975,129 @@
 }
 
 .certif-desc {
-  font-size: 1rem;
-  color: #999;
+  font-size: 1.05rem;
+  color: #171515;
   max-width: 300px;
   margin: 0 auto;
   line-height: 1.7;
 }
 
 
+.footer {
 
-
-
-
-
-
-
-
-
-    .footer {
-  background: white;
-  border-top: 1px solid #e8dff5;
-  padding: 13px 15px;
-  margin-top: 3rem;
-  text-align: center;
-  border-radius: 16px 16px 0 0;
+  padding: 1rem 2rem 0.5rem;
+  color: white;
 }
 
-.footer-content {
+.footer-top {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 12px;
 }
 
-.footer-name {
-  font-size: 15px;
-  font-weight: 600;
-  color: #b39d3a;
+/* ---- GAUCHE ---- */
+.footer-nom {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.footer-titre {
+  font-size: 14px;
+  color: #0d151b;
+}
+
+/* ---- CENTRE ---- */
+.footer-nav {
+  text-align: center;
+}
+
+.footer-nav-titre {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 14px;
+}
+
+.footer-nav-liens {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-nav-liens a {
+  font-size: 14px;
+  color: #111922;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-nav-liens a:hover {
+  color: rgba(255, 255, 255, 0.724);
+}
+
+/* ---- DROITE ---- */
+.footer-social {
+  text-align: right;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 14px;
+  justify-content: flex-end;
+}
+
+.footer-icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.footer-icons a:hover {
+  border-color: #666;
+  background: #1a1a1a;
+}
+
+/* ---- BAS ---- */
+.footer-hr {
+  border: none;
+  border-top: 1px solid #222;
+  margin-bottom: 1.25rem;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 600px) {
+  .footer {
+    padding: 2rem 1.5rem 1rem;
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-social {
+    text-align: center;
+  }
+  .footer-icons {
+    justify-content: center;
+  }
 }
 
 
