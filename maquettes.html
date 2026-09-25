@@ -7,161 +7,140 @@
     <link rel="stylesheet" href="porfolio.css">
 </head>
 <body>
-    <!-- ====================================================
-     SECTION MAQUETTES FIGMA — VERSION COMPLÈTE (3 projets)
-     À coller dans contenu.html à la place de l'ancienne section maquettes
-     ==================================================== -->
+   <!-- ============================================= -->
+<!-- SECTION "FIGMA / MES MAQUETTES"               -->
+<!-- À coller dans ton portfolio (ex: dans <main>) -->
+<!-- N'oublie pas d'inclure figma.css dans le <head> -->
+<!-- et de copier le dossier assets/figma/ à la racine de ton projet -->
+<!-- ============================================= -->
 
-<section id="maquettes">
-  <h2 class="maquettes-titre">🎨 Mes Maquettes Figma</h2>
-  <div class="maquettes-ligne-top"></div>
+<section id="figma" class="figma-section">
+  <h2 class="figma-title">Mes maquettes Figma</h2>
+  <p class="figma-intro">Une sélection de maquettes réalisées sur Figma, allant du wireframe à l'interface finalisée.</p>
 
-  <p class="maquettes-intro">Interfaces et prototypes réalisés sur Figma dans le cadre de mon apprentissage du design UI/UX.</p>
+  <ul class="figma-list">
 
-  <!-- PROJET 1 : Le Cercle Pizza -->
-  <div class="maquette-projet">
-    <div class="maquette-projet-header">
-      <span class="maquette-badge badge-pizza">🍕 App Mobile</span>
-      <h3 class="maquette-projet-titre">Le Cercle Pizza</h3>
-      <p class="maquette-projet-desc">Application mobile de commande de pizza — connexion, menu, panier, livraison et paiement. Design complet avec charte graphique rouge/bordeaux.</p>
-    </div>
-    <div class="maquette-scroll-container">
-      <div class="maquette-scroll">
-        <div class="maquette-card">
-          <img src="images/maquettes/pizza_connexion.png" alt="Connexion" loading="lazy">
-          <p>Connexion</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/pizza_accueil.png" alt="Accueil" loading="lazy">
-          <p>Accueil</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/pizza_menu.png" alt="Menu" loading="lazy">
-          <p>Nos menus</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/pizza_formules.png" alt="Formules" loading="lazy">
-          <p>Formules</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/pizza_detail.png" alt="Détail produit" loading="lazy">
-          <p>Détail produit</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/pizza_commande.png" alt="Ma commande" loading="lazy">
-          <p>Ma commande</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/pizza_livraison.png" alt="Livraison" loading="lazy">
-          <p>Livraison</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/pizza_enroute.png" alt="En route" loading="lazy">
-          <p>En route !</p>
-        </div>
+    <li class="figma-item">
+      <img src="figma/Capture d’écran 2026-09-15 à 10.04.00.png" alt="Maquette ReadClub" loading="lazy">
+      <div class="figma-caption">
+        <h3>ReadClub</h3>
+        <p>Application de lecture communautaire : gestion du compte utilisateur, bibliothèque de livres, suivi de progression, calendrier de séances de lecture et espace d'administration.</p>
       </div>
-    </div>
-  </div>
+    </li>
 
-  <!-- PROJET 2 : ReadClub -->
-  <div class="maquette-projet">
-    <div class="maquette-projet-header">
-      <span class="maquette-badge badge-readclub">📖 App Mobile</span>
-      <h3 class="maquette-projet-titre">ReadClub</h3>
-      <p class="maquette-projet-desc">Application mobile de lecture en ligne — catalogue de livres, progression de lecture, réservation de sessions et espace admin. Design épuré bleu/blanc.</p>
-    </div>
-    <div class="maquette-scroll-container">
-      <div class="maquette-scroll">
-        <div class="maquette-card">
-          <img src="images/maquettes/readclub_splash.png" alt="Splash screen" loading="lazy">
-          <p>Splash screen</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/readclub_connexion.png" alt="Connexion" loading="lazy">
-          <p>Connexion</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/readclub_inscription.png" alt="Inscription" loading="lazy">
-          <p>Inscription</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/readclub_accueil.png" alt="Accueil" loading="lazy">
-          <p>Accueil</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/readclub_catalogue.png" alt="Catalogue" loading="lazy">
-          <p>Catalogue</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/readclub_detail.png" alt="Détail livre" loading="lazy">
-          <p>Détail livre</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/readclub_progression.png" alt="Progression" loading="lazy">
-          <p>Progression</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/readclub_reservation.png" alt="Réservation" loading="lazy">
-          <p>Réservation</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/readclub_compte.png" alt="Mon compte" loading="lazy">
-          <p>Mon compte</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/readclub_admin.png" alt="Admin" loading="lazy">
-          <p>Admin</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/readclub_recherche.png" alt="Recherche" loading="lazy">
-          <p>Recherche</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/readclub_403.png" alt="Page 403" loading="lazy">
-          <p>Page 403</p>
-        </div>
+    <li class="figma-item">
+      <img src="figma/Capture d’écran 2026-09-15 à 10.01.49.png" alt="Maquette TensionWatch" loading="lazy">
+      <div class="figma-caption">
+        <h3>TensionWatch</h3>
+        <p>Application de suivi médical pour proches aidants : connexion, relevé de tension, rappel des traitements, conseils santé, numéros d'urgence et fiche patient.</p>
       </div>
-    </div>
-  </div>
+    </li>
 
-  <!-- PROJET 3 : Deeps Beercafe -->
-  <div class="maquette-projet">
-    <div class="maquette-projet-header">
-      <span class="maquette-badge badge-deeps">🍺 Wireframes</span>
-      <h3 class="maquette-projet-titre">Deeps Beercafe</h3>
-      <p class="maquette-projet-desc">Wireframes d'une application mobile pour un bar café — splash screen, onboarding, inscription et connexion. Design épuré en noir et blanc.</p>
-    </div>
-    <div class="maquette-scroll-container">
-      <div class="maquette-scroll">
-        <div class="maquette-card">
-          <img src="images/maquettes/deeps_welcome.png" alt="Splash screen" loading="lazy">
-          <p>Splash screen</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/wireframe_welcome.png" alt="Welcome" loading="lazy">
-          <p>Welcome</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/deeps_signin.png" alt="Sign in" loading="lazy">
-          <p>Sign in</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/deeps_login.png" alt="Login" loading="lazy">
-          <p>Login</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/deeps_signup.png" alt="Sign up" loading="lazy">
-          <p>Sign up</p>
-        </div>
-        <div class="maquette-card">
-          <img src="images/maquettes/wireframe_signin.png" alt="Wireframe Sign in" loading="lazy">
-          <p>Wireframe</p>
-        </div>
+    <li class="figma-item">
+      <img src="figma/Capture d’écran 2026-09-15 à 09.58.17.png" alt="Maquette Le Cercle Pizza" loading="lazy">
+      <div class="figma-caption">
+        <h3>Le Cercle Pizza</h3>
+        <p>Application de commande de pizzas : parcours de connexion, catalogue de produits, menu, panier avec code promo et suivi de livraison en temps réel.</p>
       </div>
-    </div>
-  </div>
+    </li>
 
-  <div class="maquettes-ligne-bottom"></div>
+    <li class="figma-item">
+      <img src="figma/Capture d’écran 2026-09-25 à 16.19.44.png" alt="Maquette application de restauration" loading="lazy">
+      <div class="figma-caption">
+        <h3>Food App</h3>
+        <p>Application de commande de repas : écrans d'onboarding, page d'accueil personnalisée, catégories et plats populaires.</p>
+      </div>
+    </li>
+
+    <li class="figma-item">
+      <img src="figma/Capture d’écran 2026-09-25 à 16.21.50.png" alt="Maquette Butterfly Design" loading="lazy">
+      <div class="figma-caption">
+        <h3>Butterfly Design</h3>
+        <p>Écran de connexion pour une application au design épuré, décliné sur plusieurs variantes de charte graphique.</p>
+      </div>
+    </li>
+
+    <li class="figma-item">
+      <img src="figma/Capture d’écran 2026-09-25 à 16.20.59.png" alt="Maquette écran d'accueil et connexion" loading="lazy">
+      <div class="figma-caption">
+        <h3>Welcome / Sign in</h3>
+        <p>Gabarit d'onboarding et d'écran de connexion, pensé comme base réutilisable pour d'autres projets.</p>
+      </div>
+    </li>
+
+  </ul>
 </section>
+<!-- style css-->
+<style>
+  /* ============================= */
+/* STYLE SECTION "FIGMA / MAQUETTES" */
+/* ============================= */
+
+.figma-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.figma-title {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.figma-intro {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.figma-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.figma-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.figma-item img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  display: block;
+}
+
+.figma-caption {
+  margin-top: 16px;
+  max-width: 600px;
+}
+
+.figma-caption h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.figma-caption p {
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .figma-title {
+    font-size: 1.5rem;
+  }
+}
+</style>
+
 </body>
 </html>
